@@ -10,23 +10,21 @@
     <meta property="og:site_name" content="yourdomain.com" />
     <meta property="og:description" content="A list of Your Name's most important links." />
     <link rel="stylesheet" href="css/style.css">
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js></script>
+    <script src="js/config.js"></script>
+    <script defer src="js/page.js"></script>
     <meta name="theme-color" content="var(--bgColor)">
 </head>
 
 <body>
         <!--Page Content Below-->
-    <img id="userPhoto" class="animated rubberBand fast" src="images/profile-picture.webp" alt="Your Name's Photo">
-    <h1 class="animated jello">Your Name</h1>
-    <a href="https://www.instagram.com/" id="userName" class="animated fadeIn delay-1s fast">Instagram: @yourname</a>
+    <img id="userPhoto" class="animated rubberBand fast">
+    <h1 class="animated jello" id="name"></h1>
+    <a href="https://www.instagram.com/" id="userName" class="animated fadeIn delay-1s fast">Instagram: <span id=tag></span></a>
     <div id="links" class="animated fadeInLeft delay-1s">
-        <a class="link" href="https://domain.com/" target="_blank">First Link</a>
-        <a class="link" href="https://domain.com/" target="_blank">Second Link</a>
-        <a class="link" href="https://domain.com/" target="_blank">Third Link</a>
-        <a class="link" href="https://domain.com/" target="_blank">Fourth Link</a>
-        <a class="link" href="https://domain.com/" target="_blank">Fifth Link</a>
     </div>
     
-    <a href="mailto:you@email.com" class="animated fadeIn delay-3s slow" id="userName">Email Me</a>
+    <a class="animated fadeIn delay-3s slow" id="mailto">Email Me</a>
         <!--Optional Attribution Repo Link-->
     <a class="atrib" href="https://github.com/mackenly/quickbiolinks">Built With QuickBioLinks ❤️</a>
 </body>
